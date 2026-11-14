@@ -1,0 +1,399 @@
+d
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tequila Mae V. Pagaling | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #facc15;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        .hero {
+            min-height: 85vh;
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #facc15;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #facc15;
+            color: #172554;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #172554;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            background: #eaf0ff;
+        }
+
+        .skill {
+            background: #dbeafe;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 8px;
+        }
+
+        .java-box {
+            background: #172554;
+            color: #facc15;
+            padding: 25px;
+            border-radius: 12px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>My Portfolio</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Personal Info</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#java">Java Code</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div>
+        <h1>Hello, I'm <span>Tequila Mae!</span></h1>
+        <p>BS Information Technology Student</p>
+        <p>Welcome to my personal portfolio website.</p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+</section>
+
+<!-- PERSONAL INFORMATION -->
+<section id="about">
+    <h2 class="section-title">Personal Information</h2>
+
+    <div class="about">
+        <h3>About Me</h3>
+        <p>
+            My name is Tequila Mae V. Pagaling. I am 18 years old
+            and currently studying Bachelor of Science in Information
+            Technology at Our Lady of the Sacred Heart College of Guimba, Inc.
+        </p>
+
+        <br>
+
+        <p>
+            I am a kind, friendly, respectful, and cheerful person.
+            I love being myself and learning new things.
+            I am determined to improve my knowledge and skills,
+            especially in technology and programming.
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATIONAL BACKGROUND -->
+<section id="education">
+    <h2 class="section-title">Educational Background</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Elementary</h3>
+            <p>Elementary Education</p>
+            <p>School:manggang marikit Elementary School</p>
+        </div>
+
+        <div class="card">
+            <h3>Senior High School</h3>
+            <p>Bonifacio Luz Natividad</p>
+            <p>Senior High School Graduate</p>
+        </div>
+
+        <div class="card">
+            <h3>College</h3>
+            <p>Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+            <p>BS Information Technology</p>
+            <p>Currently Studying</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Technical Skills</h3>
+            <div class="skill">Basic Computer Skills</div>
+            <div class="skill">HTML and CSS - Beginner</div>
+            <div class="skill">Java Programming - Beginner</div>
+            <div class="skill">Creating Flowcharts</div>
+        </div>
+
+        <div class="card">
+            <h3>Personal Skills</h3>
+            <div class="skill">Communication</div>
+            <div class="skill">Teamwork</div>
+            <div class="skill">Time Management</div>
+            <div class="skill">Willingness to Learn</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- JAVA CODE -->
+<section id="java">
+    <h2 class="section-title">My Java Code</h2>
+
+    <div class="about">
+        <p>
+            This section contains my final Performance Task
+            in CC102. It showcases my knowledge of Java programming
+            and my ability to develop a console-based game.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="java-box">
+        <h3>Java Programming Project</h3>
+
+        // 
+import java.util.Random;
+import java.util.Scanner;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        boolean playAgain = true;
+
+        System.out.println("================================");
+        System.out.println("      NUMBER GUESSING GAME");
+        System.out.println("================================");
+        System.out.println("Guess a number from 1 to 100.");
+        System.out.println("You have 7 attempts!");
+
+        while (playAgain) {
+
+            int secretNumber = random.nextInt(100) + 1;
+            int attempts = 7;
+            boolean correct = false;
+
+            while (attempts > 0 && !correct) {
+
+                System.out.print("\nEnter your guess: ");
+
+                if (!input.hasNextInt()) {
+                    System.out.println("Please enter a valid number.");
+                    input.next();
+                    continue;
+                }
+
+                int guess = input.nextInt();
+
+                if (guess < 1 || guess > 100) {
+                    System.out.println("Enter a number from 1 to 100.");
+                    continue;
+                }
+
+                attempts--;
+
+                if (guess == secretNumber) {
+                    System.out.println("Congratulations! You win!");
+                    correct = true;
+                } else if (guess < secretNumber) {
+                    System.out.println("Too low! Try again.");
+                } else {
+                    System.out.println("Too high! Try again.");
+                }
+
+                System.out.println("Attempts left: " + attempts);
+            }
+
+            if (!correct) {
+                System.out.println("Game over!");
+                System.out.println("The number was " + secretNumber);
+            }
+
+            System.out.print("Play again? (yes/no): ");
+            String answer = input.next();
+
+            if (!answer.equalsIgnoreCase("yes")) {
+                playAgain = false;
+            }
+        }
+
+        System.out.println("Thank you for playing!");
+        input.close();
+    }
+}
+
+
+        // Example:
+
+        public class Main {
+            public static void main(String[] args) {
+                System.out.println("Welcome to my Java Project!");
+                System.out.println("Created by Tequila Mae V. Pagaling");
+            }
+        }
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact">
+        <p><strong>Name:</strong> Tequila Mae V. Pagaling</p>
+        <p><strong>Age:</strong> 18 years old</p>
+        <p><strong>Course:</strong> BS Information Technology</p>
+        <p><strong>Email:</strong> tequilapagaling@gmail.com</p>
+        <p><strong>Address:</strong> manggang marikit guimba nueva ecija </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Tequila Mae V. Pagaling</p>
+    <p>BS Information Technology | My Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
